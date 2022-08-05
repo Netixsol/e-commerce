@@ -33,8 +33,6 @@ export function deleteCart(id,newId) {
 const obj = {
   userId: newId,
 } 
-console.log("id",id)
-console.log("New Id",newId)
   return axiosClient.put(`/cart/delete/${id}`, JSON.stringify(obj));
 }
 

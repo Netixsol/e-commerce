@@ -11,6 +11,5 @@ export function addReview(user,value){
         email: user.email,
         description: value,
     }
-    console.log(reviewObj);
     return axiosClient.post('/review/add', JSON.stringify(reviewObj));
 }

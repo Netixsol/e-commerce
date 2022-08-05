@@ -39,7 +39,6 @@ export default function ProductDetails() {
         })
       }
   const AddToCart = (value) => {
-    console.log("value",value, "user",user , "qty",qty)
       addCart(value,user,qty).then(res => {
         dispatch({type:'CART_DRAWER',payload:{drawer:user.cartDrawer,cartData:res.data}});
         setErrorStock("")
@@ -55,12 +54,12 @@ export default function ProductDetails() {
     useEffect(() => {
 
       getProductById(state._id).then(res => {
+       const newQty = user.cartData.products.find(item => item.product._id == state._id)
         const obj ={
           ...res.data,
-          qty:res.data.qty - 1 
+          qty:res.data.qty - newQty.qty 
         }
         setData(obj)
-        console.log("user",user.cartData.products.filter(item => console.log(item)))
         console.log("Cart",user.cartData)
       }
       ).catch(err => {

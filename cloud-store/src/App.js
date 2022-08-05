@@ -16,7 +16,6 @@ const App = () => {
   const cart = useSelector(state => state.users.cartDrawer);
   const id = useSelector(state => state.users.userObj._id);
   const data = useSelector(state => state.users);
-  console.log("App.js ~ line 19", data)
   const dispatch = useDispatch();
   const token = Cookies.get('token');
 
@@ -76,7 +75,6 @@ useEffect(() => {
     })
       .then((res) => res.json())
       .then((data) => setClientSecret(data.clientSecret));
-      console.log("working here")
   }, []);
 
   return (
