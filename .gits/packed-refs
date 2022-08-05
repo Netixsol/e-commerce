@@ -1,0 +1,7 @@
+# pack-refs with: peeled fully-peeled sorted 
+b2be63f0e35ea438d98cf6801b0cad8fe402a8f3 refs/remotes/origin/admin-panel
+b3b97d96359d6baa915e816a89f34a354b75ed4f refs/remotes/origin/cart
+e3639731dd153365ce3034e31568cd5881648a53 refs/remotes/origin/cart-changes
+e194b98f3dd0a53666c88f2908af1dc58bedbdbd refs/remotes/origin/circleci-project-setup
+5cb4796ad022c97d151ef16f9b45edee52d71925 refs/remotes/origin/development
+3d021988165d1be178f92dd8513d8ee0aadf680c refs/remotes/origin/stripe
