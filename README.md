@@ -26,11 +26,13 @@ Install all the npm packages. Go into the project folder "root/backend" & "root/
 npm install
 ```
 
-In order to run the application Type the following command
+In order to run the application Type the following command on both folder "backend" and "cloud-store"
 
 ```bash
 npm start
 ```
 
 The Application Runs on **localhost:3000**
+
+
 The Backend Runs on **localhost:4000**
